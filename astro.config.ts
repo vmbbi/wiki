@@ -21,6 +21,7 @@ export default defineConfig({
       },
     }),
     c15t({
+      middleware: false,
       mode: local({
         policyRules: [
           policyRulePresets.europeOptIn(),
@@ -74,9 +75,6 @@ export default defineConfig({
   i18n: {
     locales: ['en-gb', 'zh-hk', 'zh-cn', 'en-us'],
     defaultLocale: 'en-gb',
-    routing: {
-      prefixDefaultLocale: true,
-      redirectToDefaultLocale: true,
-    },
+    routing: "manual",
   },
 });
