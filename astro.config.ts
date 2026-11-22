@@ -63,6 +63,13 @@ export default defineConfig({
     ssr: {
       noExternal: ["c15t", "@c15t/astro"],
     },
+    environments: {
+      prerender: {
+        resolve: {
+          noExternal: ["c15t", "@c15t/astro"],
+        },
+      },
+    },
   },
   i18n: {
       locales: ['en-gb', 'zh-hk', 'zh-cn', 'en-us'],
