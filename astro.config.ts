@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import fumadocs from '@fumadocs/astro';
+import { policyRulePresets } from "c15t";
+import { c15t, local } from "c15t/astro";
 
 export default defineConfig({
   site: 'https://vmbbi.github.io',
