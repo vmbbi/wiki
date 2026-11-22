@@ -72,11 +72,14 @@ export default defineConfig({
     },
   },
   i18n: {
-      locales: ['en-gb', 'zh-hk', 'zh-cn', 'en-us'],
-      defaultLocale: 'en-gb',
-      routing: {
-        prefixDefaultLocale: true,
-        redirectToDefaultLocale: true,
-      },
+    locales: ['en-gb', 'zh-hk', 'zh-cn', 'en-us'],
+    defaultLocale: 'en-gb',
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
     },
+  },
+  redirects: {
+    '/wiki': '/wiki/en-gb',
+  },
 });
