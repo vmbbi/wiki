@@ -7,7 +7,7 @@ import {
   ConsentDialog,
   ConsentScript,
 } from "c15t/astro/components";
-import favicon from '../../public/wiki/favicon.ico'
+import favicon from '../../public/wiki/favicon.svg'
 
 interface Props {
   lang?: string;
@@ -38,7 +38,7 @@ const ogImageUrl = image
             <meta name="twitter:image" content={ogImageUrl} />
           </>
         )}
-    <link rel="icon" type="image/png" href={favicon} />
+    <link rel="icon" type="image/png" href={favicon.src} />
     <link rel="sitemap" href="/wiki/sitemap.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
