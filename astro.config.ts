@@ -21,9 +21,6 @@ export default defineConfig({
       },
     }),
     c15t({
-      middleware: {
-          skip: ["/wiki"],
-        },
       mode: local({
         policyRules: [
           policyRulePresets.europeOptIn(),
