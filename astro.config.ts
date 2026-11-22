@@ -21,6 +21,9 @@ export default defineConfig({
       },
     }),
     c15t({
+      middleware: {
+          skip: ["/wiki"],
+        },
       mode: local({
         policyRules: [
           policyRulePresets.europeOptIn(),
@@ -78,8 +81,5 @@ export default defineConfig({
       prefixDefaultLocale: true,
       redirectToDefaultLocale: true,
     },
-  },
-  redirects: {
-    '/wiki': '/wiki/en-gb',
   },
 });
