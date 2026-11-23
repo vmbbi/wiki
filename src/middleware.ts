@@ -1,5 +1,4 @@
 import { defineMiddleware, sequence } from 'astro:middleware';
-import { middleware as i18nMiddleware } from 'astro:i18n';
 import { onRequest as c15tMiddleware } from 'c15t/astro/middleware';
 
 const fumadocsDevMiddleware = defineMiddleware(async (_context, next) => {
@@ -28,9 +27,4 @@ const fumadocsDevMiddleware = defineMiddleware(async (_context, next) => {
 export const onRequest = sequence(
   c15tMiddleware,
   fumadocsDevMiddleware,
-  i18nMiddleware({
-    redirectToDefaultLocale: true,
-    prefixDefaultLocale: true,
-    fallbackType: 'redirect',
-  }),
 );
