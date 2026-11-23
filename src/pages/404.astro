@@ -4,5 +4,5 @@ import { NotFound } from '@/components/home';
 ---
 
 <Layout title="Not Found">
-  <NotFound client:load pathname={Astro.url.pathname+'/wiki'} params={Astro.params} />
+  <NotFound client:load pathname={Astro.url.pathname} params={Astro.params} />
 </Layout>
