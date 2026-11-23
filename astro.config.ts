@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
       format: 'file',
   },
-  trailingSlash: 'ignore',
+  trailingSlash: 'never',
   integrations: [
     fumadocs({
       components: './src/components/mdx.tsx',
